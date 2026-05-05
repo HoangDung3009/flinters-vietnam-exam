@@ -5,6 +5,7 @@ import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
+import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,7 +23,7 @@ public class CsvReader {
      * @return List of campaign records
      * @throws IOException If file cannot be read
      */
-    public static List<CampaignAnalytics> readCsv(String filePath) throws IOException {
+    public static List<CampaignAnalytics> readCsv(String filePath) throws IOException, CsvValidationException {
         List<CampaignAnalytics> records = new ArrayList<>();
         CSVParser parser = new CSVParserBuilder().withSeparator(',').build();
 

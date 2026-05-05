@@ -16,7 +16,7 @@ public class CsvAnalyticsApp {
     public static void main(String[] args) {
         if (args.length < 2) {
             System.err.println("Usage: java -jar csv-analytics.jar <input-csv-path> <output-directory>");
-            System.err.println("Example: java -jar csv-analytics.jar data/input.csv output/");
+            System.err.println("Example: java -jar csv-analytics.jar data/ad_data.csv output/");
             System.exit(1);
         }
 

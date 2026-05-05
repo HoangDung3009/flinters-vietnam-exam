@@ -64,7 +64,7 @@ public class AnalyticsProcessor {
      */
     public List<CampaignAnalytics> getTop10ByCPA(List<CampaignAnalytics> campaigns) {
         return campaigns.stream()
-                .filter(c -> c.getConversions() > 0)  // Exclude zero conversions
+                .filter(c -> c.getTotalConversions() > 0)  // Exclude zero conversions
                 .sorted(Comparator.comparingDouble(CampaignAnalytics::getCpa))
                 .limit(10)
                 .collect(Collectors.toList());

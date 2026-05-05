@@ -20,10 +20,12 @@
 
     <dependencies>
         <!-- OpenCSV for CSV processing -->
+        <!-- Source: https://mvnrepository.com/artifact/com.opencsv/opencsv -->
         <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
-            <version>5.7</version>
+            <version>5.7.1</version>
+            <scope>compile</scope>
         </dependency>
 
         <!-- JUnit for testing -->
