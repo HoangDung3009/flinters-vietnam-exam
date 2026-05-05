@@ -1,0 +1,13 @@
+.git/
+.gitignore
+README.md
+DOCKER_GUIDE.md
+src/test/
+target/
+*.iml
+.idea/
+.vscode/
+.DS_Store
+*.class
+*.jar
+*.war
