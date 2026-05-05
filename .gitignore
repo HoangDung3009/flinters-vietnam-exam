@@ -27,9 +27,6 @@ dependency-reduced-pom.xml
 *.tar.gz
 *.rar
 
-# Output
-output/
-*.csv
 
 # Gradle
 .gradle/
